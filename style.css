@@ -44,3 +44,23 @@ body {
   color: white;
   text-align: center;
 }
+
+.button {
+  padding: 10px 30px;
+  border: 0;
+  color:white;
+  text-transform: uppercase;
+}
+
+.button-primary {
+  background: #f0795e;
+}
+
+.button-secondary {
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+.hero-cta button+button {
+  margin-left: 20px;
+}
