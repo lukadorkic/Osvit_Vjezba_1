@@ -32,6 +32,7 @@ body {
   padding-inline-start: 0;
 }
 
+
 .hero {
   position: relative;
   background-image: url("assets/header_visual.jpg");
@@ -52,6 +53,9 @@ body {
   border: 0;
   color: white;
   text-transform: uppercase;
+  color: white;
+  border-style: solid 2px;
+  border-color: red
 }
 
 .button-primary {
@@ -144,3 +148,139 @@ padding: 100px 0;
 position: relative;
 top: 10px
 }
+
+
+.pricing-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 500px) {
+  .pricing-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 500px) {
+  .pricing-options .package:first-child {
+    margin-right: 15px;
+  }
+
+  .pricing-options .package:last-child {
+    margin-left: 15px;
+  }
+}
+
+.package {
+  background: #FF7F50;
+  width: 100%;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+@media (max-width: 500px) {
+  .package + .package {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 500px) {
+  .package {
+    width: 50%;
+  }
+}
+
+.package:hover {
+  background: red;
+  color: white;
+  transform: translateY(-20px);
+}
+
+.package:hover h1 {
+  color: white;
+}
+
+.package-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.package-header h1,
+.package-header h2 {
+  margin: 0;
+}
+
+.pricing-options {
+  background-color:#f9f6ef;
+}
+
+.download {
+  text-align: center;
+  color: #f9f6ef;
+  padding: 10px
+  
+}
+
+.downloadsection {
+  background-color: #FF7F50;
+}
+
+.imagesdownload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appstore {
+  height: 100px;
+}
+
+.googleplay {
+  height: 250px;
+}
+
+.pagend {
+  display:flex;
+  justify-content: left;
+  color:gray
+}
+
+.address {
+  padding: 10px;
+}
+
+.contact {
+  padding: 10px;
+}
+
+.socialnetworks {
+  padding: 10px;
+}
+
+.copyright {
+  padding-left: 400px
+}
+
+.appstore-button {
+  background: transparent;
+  border: none;
+}
+
+.googleplay-button {
+  background: transparent;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
